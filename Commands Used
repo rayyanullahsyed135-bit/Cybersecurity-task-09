@@ -1,17 +1,16 @@
 1. Network discovery scan:
-   nmap -sn 192.168.1.0/24
+   nmap -sn 192.168.240.132 0/24
 
 2. Basic port scan:
-   nmap 192.168.1.1
+   nmap 192.168.240.132
 
 3. Service and version detection:
-   nmap -sV 192.168.1.1
-
+   nmap -sV 192.168.240.132
 4. OS detection:
-   sudo nmap -O 192.168.1.1
+   sudo nmap -O 192.168.240.132
 
 5. Vulnerability script scan:
-   nmap --script vuln 192.168.1.1
+   nmap --script vuln 192.168.240.132
 
 6. Save output to file:
-   nmap -sV -O 192.168.1.1 -oN nmap_full_scan.txt
+   nmap -sV -O 192.168.240.132 -oN nmap_full_scan.txt
